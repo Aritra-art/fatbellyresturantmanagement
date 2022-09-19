@@ -14,7 +14,6 @@ export default function Menu() {
   const getCategory = (categoryName) => {
     setGetCategoryName(categoryName);
   };
-  console.log(menuList[getCategoryName]);
   return (
     <>
       <Navbar companyName={resturantInfo.name} styleAColorHex={"#FF2C55"} />
