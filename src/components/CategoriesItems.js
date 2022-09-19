@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import { Flex, Box, Button } from "@chakra-ui/react";
 
 function CategoriesItems(props) {
-  let [categoryName, setCategoryName] = useState("Burgers");
+  let [categoryName, setCategoryName] = useState("");
 
   const categoryNameHandler = (e) => {
     categoryName = e.target.textContent;
     setCategoryName(categoryName);
     props.getCategoryName(categoryName);
-    // console.log(categoryName);
   };
 
   return (

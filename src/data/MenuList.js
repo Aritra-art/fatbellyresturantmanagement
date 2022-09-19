@@ -2,19 +2,16 @@ export const menuList = {
   Burgers: [
     {
       name: "Double Cheeseburger",
-      //   category: "Burger",
       image: "./../images/grub2sleexht.png",
       price: "20",
     },
     {
       name: "Mala Xiang Guo Burger",
-      //   category: "Burger",
       image: "./../images/grub2sleexht.png",
       price: "25",
     },
     {
       name: "Maple Bacon Burger",
-      //   category: "Burger",
       image: "./../images/grub2sleexht.png",
       price: "15",
     },
@@ -22,13 +19,11 @@ export const menuList = {
   Grilled: [
     {
       name: "Grilled Ribeye Steak",
-      //   category: "Grilled",
       image: "./../images/grub2sleexht.png",
       price: "25",
     },
     {
       name: "Grilled Chicken Pesto",
-      //   category: "Grilled",
       image: "./../images/grub2sleexht.png",
       price: "18",
     },
@@ -36,14 +31,12 @@ export const menuList = {
   Salad: [
     {
       name: "Shredded Sprout Salad",
-      //   category: "Salad",
       image: "./../images/grub2sleexht.png",
       price: "22",
     },
 
     {
       name: "Rainbow Orazo Salad",
-      //   category: "Salad",
       image: "./../images/grub2sleexht.png",
       price: "18",
     },
@@ -51,7 +44,6 @@ export const menuList = {
   Soba: [
     {
       name: "Truffle Mushroom Soba",
-      //   category: "Soba",
       image: "./../images/grub2sleexht.png",
       price: "15",
     },
@@ -59,13 +51,11 @@ export const menuList = {
   Sides: [
     {
       name: "Spiced Apply Pancakes",
-      //   category: "Sides",
       image: "./../images/grub2sleexht.png",
       price: "25",
     },
     {
       name: "Lemon Shortbread Cookies",
-      //   category: "Sides",
       image: "./../images/grub2sleexht.png",
       price: "20",
     },
@@ -73,7 +63,6 @@ export const menuList = {
   Drinks: [
     {
       name: "Moscow Mule",
-      // category: "Drinks",
       image: "./../images/grub2sleexht.png",
       price: "21",
     },

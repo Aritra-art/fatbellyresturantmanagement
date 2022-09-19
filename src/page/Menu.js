@@ -2,7 +2,6 @@ import { Box, Button, Flex, Image } from "@chakra-ui/react";
 import React from "react";
 import { useState } from "react";
 import { resturantInfo } from "../data/ResturantInfo";
-import { categories } from "../data/Categories";
 import { menuList } from "../data/MenuList";
 
 import Navbar from "../components/Navbar";
@@ -24,7 +23,7 @@ export default function Menu() {
       <CategoriesItems
         styleAColorHex={"#FF2C55"}
         getCategoryName={getCategory}
-        uniqueCategory={categories.categories}
+        uniqueCategory={Object.keys(menuList)}
       />
       <Flex
         flexWrap="wrap"
