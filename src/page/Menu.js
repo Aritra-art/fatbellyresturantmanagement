@@ -14,6 +14,7 @@ export default function Menu() {
   const getCategory = (categoryName) => {
     setGetCategoryName(categoryName);
   };
+  console.log(menuList[getCategoryName]);
   return (
     <>
       <Navbar companyName={resturantInfo.name} styleAColorHex={"#FF2C55"} />
@@ -32,15 +33,19 @@ export default function Menu() {
         borderColor="gray.100"
         alignContent={"center"}
       >
-        {menuList[getCategoryName].map((item, index) => (
-          <Box key={index}>
-            <IndividualItems
-              currency={"SGD"}
-              item={item}
-              styleAColorHex={"#FF2C55"}
-            />
-          </Box>
-        ))}
+        {menuList[getCategoryName].length === 0 ? (
+          <p>No Items Found !!</p>
+        ) : (
+          menuList[getCategoryName].map((item, index) => (
+            <Box key={index}>
+              <IndividualItems
+                currency={"SGD"}
+                item={item}
+                styleAColorHex={"#FF2C55"}
+              />
+            </Box>
+          ))
+        )}
       </Flex>
       <Flex flexWrap="wrap" m="5" alignContent={"center"}>
         <Button bg={"grey"} color="white" onClick={() => {}}>
